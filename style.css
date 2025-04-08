@@ -214,7 +214,7 @@
 }
 .progress{
     background-color: rgb(4, 30, 37);
-    height: 20px;
+    height: 10px;
     position: fixed;
     top: 0;
     left: 0;
