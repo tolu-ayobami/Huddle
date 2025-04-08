@@ -223,6 +223,7 @@
     z-index: 9;
     animation: progress linear;
     animation-timeline: scroll();
+    border-radius:17px;
 }
 
 @keyframes progress{
