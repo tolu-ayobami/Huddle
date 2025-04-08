@@ -214,7 +214,7 @@
 }
 .progress{
     background-color: rgb(4, 30, 37);
-    height: 10px;
+    height: 8px;
     position: fixed;
     top: 0;
     left: 0;
@@ -223,7 +223,7 @@
     z-index: 9;
     animation: progress linear;
     animation-timeline: scroll();
-    border-radius:17px;
+    border-radius:25px;
 }
 
 @keyframes progress{
