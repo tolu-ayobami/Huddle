@@ -1,0 +1,380 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito';
+}
+
+
+.logo img{
+    width: 200px;
+}
+
+.headbtn button{
+    background-color: white;
+    width: 160px;
+    padding: 13px;
+    border-radius: 40px;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.header{
+    padding: 40px 70px;
+    background-image: url("images/bg-hero-desktop.svg");
+    width: 100%;
+    background-size:cover;
+    position: relative;
+   
+}
+
+.header1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headwrites{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 36%;
+}
+
+.writesbtn{
+    background-color: rgb(252, 171, 221);
+    width: 200px;
+    padding: 13px;
+    border-radius: 40px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.header2img{
+    width: 50%;
+}
+
+.header2img img{
+    width: 100%;
+}
+
+.header2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+}
+
+
+.overlay{
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(215, 246, 252, 0.5);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+
+}
+.grow{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 36%;
+}
+
+.growimg{
+    width: 30%;
+}
+
+
+@media(prefers-reduced-motion:no-preference){
+    @supports(animation-timeline: scroll()){
+        .growimg img{
+            animation:rotate linear both;
+            animation-timeline: view();
+            animation-range: contain;
+        }
+
+    }
+}
+.growimg img{
+    width: 100%;
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.body{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 80%;
+    margin: auto;
+    margin-top: 70px;
+    padding: 16px;
+}
+
+.fourth i{
+    color: white;
+    border: 1px solid white;
+    border-radius: 30%;
+    padding: 10px;
+}
+
+.footer{
+    background-color: rgb(2, 29, 37);
+    color: white;
+    margin-top: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+    position: relative;
+}
+
+.location, .phone, .Email{
+    display: flex;
+    align-items: center;
+    gap:15px
+    
+}
+
+.first{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 30%;
+}
+
+.second, .third{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.fourth{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.i{
+    display: flex;
+    gap: 20px;
+}
+
+.Ready{
+    background-color: white;
+    width: 45%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px;
+    align-items: center;
+    border-radius: 20px;
+    margin: auto;
+    position: absolute;
+    top: -150px;
+    color: black;
+    text-align: center;
+    animation-duration: 1s;
+}
+
+
+@media(prefers-reduced-motion:no-preference){
+    @supports(animation-timeline: scroll()){
+        .Ready{
+            animation:ready linear both;
+            animation-timeline: view();
+            animation-range: contain;
+        }
+
+    }
+}
+
+
+@keyframes ready {
+    to {top: 100px;
+         background-color: rgb(4, 30, 37);
+         color: white;
+        
+    }
+    
+}
+.progress{
+    background-color: rgb(4, 30, 37);
+    height: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform-origin: left center;
+    width: 100%;
+    z-index: 9;
+    animation: progress linear;
+    animation-timeline: scroll();
+}
+
+@keyframes progress{
+    from {
+        transform: scaleX(0);
+    }
+}
+
+.second a, .third a{
+    color: white;
+}
+
+@media screen and (max-width:700px) {
+
+    
+.header{
+    padding:15px;
+    background-image: url("images/bg-hero-mobile.svg");
+    width: 100%;
+    background-size:cover;
+    position: relative;
+   
+}
+
+
+.logo img{
+    width: 120px;
+}
+
+.headbtn button{
+    background-color: white;
+    width: 100px;
+    padding: 7px;
+    border-radius: 40px;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+    
+
+.header2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    max-width: 85%;
+    margin: auto;
+}
+
+
+.headwrites{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.writesbtn{
+    background-color: rgb(252, 171, 221);
+    width: 220px;
+    padding: 13px;
+    border-radius: 40px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+
+.header2img{
+    width: 100%;
+}
+
+
+.body{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column-reverse;
+    gap: 20px;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 80%;
+    margin: auto;
+    margin-top: 70px;
+    padding: 40px;
+    text-align: center;
+
+}
+
+h1{
+    font-size: 25px;
+}
+
+
+.grow{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.growimg{
+    width: 100%;
+}
+
+
+.Ready{
+    width: 80%;
+    text-align: center;
+}
+
+
+.footer{
+    background-color: rgb(2, 29, 37);
+    color: white;
+    margin-top: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+}
+
+
+.first{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+    margin-top: 120px;
+}
+
+.second, .third{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+    
+}
+
+.fourth{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+}
+
+}
+
